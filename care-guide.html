@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Guide - KicksLog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-heart-fill text-danger"></i> KicksLog
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ペット図鑑</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">飼い方ガイド</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">飼育記録</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success ms-3 rounded-pill fw-bold">
+                    <i class="bi bi-person-circle"></i> ログイン
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ページヘッダー -->
+    <div class="page-header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold mb-3" style="color: var(--brown-color);">
+                    <i class="bi bi-book"></i> 飼い方ガイド
+                </h1>
+                <p class="lead" style="color: var(--brown-color);">
+                    初心者から上級者まで、ペットとの生活をサポート
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 検索ボックス -->
+        <div class="search-box">
+            <div class="d-flex align-items-center">
+                <input type="text" class="flex-grow-1" placeholder="飼い方を検索...（例：犬のしつけ、猫のトイレ）">
+                <button type="button">
+                    <i class="bi bi-search"></i> 検索
+                </button>
+            </div>
+        </div>
+
+        <!-- カテゴリー選択 -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4" style="color: var(--brown-color);">
+                <i class="bi bi-grid-3x3-gap-fill"></i> カテゴリーから探す
+            </h2>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-card text-center">
+                        <div class="category-icon"
+                            style="background: rgba(16, 185, 129, 0.1); color: var(--primary-color);">
+                            <i class="bi bi-emoji-smile"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2" style="color: var(--brown-color);">犬の飼い方</h5>
+                        <p class="text-muted small mb-0">45ガイド</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-card text-center">
+                        <div class="category-icon"
+                            style="background: rgba(251, 146, 60, 0.1); color: var(--accent-color);">
+                            <i class="bi bi-emoji-heart-eyes"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2" style="color: var(--brown-color);">猫の飼い方</h5>
+                        <p class="text-muted small mb-0">38ガイド</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-card text-center">
+                        <div class="category-icon" style="background: rgba(6, 182, 212, 0.1); color: #06b6d4;">
+                            <i class="bi bi-brightness-alt-high"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2" style="color: var(--brown-color);">小動物</h5>
+                        <p class="text-muted small mb-0">28ガイド</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="category-card text-center">
+                        <div class="category-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">
+                            <i class="bi bi-cloud"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2" style="color: var(--brown-color);">鳥類</h5>
+                        <p class="text-muted small mb-0">22ガイド</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <!-- メインコンテンツ -->
+            <div class="col-lg-8">
+                <!-- 人気ガイド -->
+                <section class="mb-5">
+                    <h3 class="fw-bold mb-4" style="color: var(--brown-color);">
+                        <i class="bi bi-star-fill text-warning"></i> 人気のガイド
+                    </h3>
+
+                    <div class="guide-card">
+                        <div class="d-flex align-items-center">
+                            <div class="guide-icon"
+                                style="background: rgba(16, 185, 129, 0.1); color: var(--primary-color);">
+                                <i class="bi bi-house-door"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fw-bold mb-1" style="color: var(--brown-color);">初めての犬の飼い方 - 完全ガイド</h5>
+                                <p class="text-muted mb-2 small">犬を迎える準備から日常のケアまで徹底解説</p>
+                                <div>
+                                    <span class="tag-badge">犬</span>
+                                    <span class="tag-badge">初心者</span>
+                                    <span class="tag-badge">基本</span>
+                                </div>
+                            </div>
+                            <i class="bi bi-chevron-right fs-4" style="color: var(--primary-color);"></i>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="d-flex align-items-center">
+                            <div class="guide-icon"
+                                style="background: rgba(251, 146, 60, 0.1); color: var(--accent-color);">
+                                <i class="bi bi-scissors"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fw-bold mb-1" style="color: var(--brown-color);">猫のトイレトレーニング</h5>
+                                <p class="text-muted mb-2 small">成功率99%！猫のトイレしつけ方法</p>
+                                <div>
+                                    <span class="tag-badge">猫</span>
+                                    <span class="tag-badge">しつけ</span>
+                                    <span class="tag-badge">トイレ</span>
+                                </div>
+                            </div>
+                            <i class="bi bi-chevron-right fs-4" style="color: var(--primary-color);"></i>
+                        </div>
+                    </div>
+
+                    <div class="guide-card">
+                        <div class="d-flex align-items-center">
+                            <div class="guide-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+                                <i class="bi bi-heart-pulse"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h5 class="fw-bold mb-1" style="color: var(--brown-color);">ペットの健康管理マニュアル</h5>
+                                <p class="text-muted mb-2 small">病気予防から緊急時の対応まで</p>
+                                <div>
+                                    <span class="tag-badge">健康</span>
+                                    <span class="tag-badge">予防</span>
+                                    <span class="tag-badge">全般</span>
+                                </div>
+                            </div>
+                            <i class="bi bi-chevron-right fs-4" style="color: var(--primary-color);"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 詳細ガイド: 犬の飼い方 -->
+                <section class="mb-5">
+                    <h3 class="fw-bold mb-4" style="color: var(--brown-color);">
+                        <i class="bi bi-book-half"></i> 犬の飼い方 - 完全ガイド
+                    </h3>
+
+                    <div class="accordion accordion-custom" id="dogGuideAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#step1">
+                                    <i class="bi bi-1-circle-fill me-2" style="color: var(--primary-color);"></i>
+                                    犬を迎える準備
+                                </button>
+                            </h2>
+                            <div id="step1" class="accordion-collapse collapse show"
+                                data-bs-parent="#dogGuideAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="fw-bold mb-3">必要な準備リスト</h5>
+                                    <ul class="checklist">
+                                        <li>ケージ・サークル（犬のサイズに合ったもの）</li>
+                                        <li>フードボウル・給水器</li>
+                                        <li>トイレトレー・ペットシーツ</li>
+                                        <li>ベッド・毛布</li>
+                                        <li>首輪・リード・ハーネス</li>
+                                        <li>ドッグフード（年齢に適したもの）</li>
+                                        <li>おもちゃ（噛むおもちゃ、ボールなど）</li>
+                                        <li>ブラシ・爪切りなどのグルーミング用品</li>
+                                    </ul>
+
+                                    <div class="tip-box">
+                                        <h6 class="fw-bold mb-2">
+                                            <i class="bi bi-lightbulb-fill text-warning"></i> ワンポイントアドバイス
+                                        </h6>
+                                        <p class="mb-0">
+                                            初日からすべて揃える必要はありません。最低限必要なのは、ケージ、トイレ、フード、水です。その他は犬の様子を見ながら徐々に揃えていきましょう。</p>
+                                    </div>
+
+                                    <h5 class="fw-bold mb-3 mt-4">環境の整備</h5>
+                                    <p>犬が安心して過ごせる環境を作りましょう：</p>
+                                    <ul>
+                                        <li>静かで落ち着ける場所にケージを設置</li>
+                                        <li>危険物（電気コード、観葉植物、小物）を片付ける</li>
+                                        <li>滑りやすい床にはマットを敷く</li>
+                                        <li>脱走防止のため、窓や扉の施錠を確認</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#step2">
+                                    <i class="bi bi-2-circle-fill me-2" style="color: var(--primary-color);"></i>
+                                    初日の迎え方
+                                </button>
+                            </h2>
+                            <div id="step2" class="accordion-collapse collapse" data-bs-parent="#dogGuideAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="fw-bold mb-3">初日のスケジュール</h5>
+
+                                    <div class="step-card">
+                                        <div class="step-number">1</div>
+                                        <h6 class="fw-bold mb-2">到着後すぐ</h6>
+                                        <p class="mb-0">まずトイレに連れて行きます。長時間の移動で排泄したくなっているはずです。成功したら優しく褒めてあげましょう。</p>
+                                    </div>
+
+                                    <div class="step-card">
+                                        <div class="step-number">2</div>
+                                        <h6 class="fw-bold mb-2">家の中を探索</h6>
+                                        <p class="mb-0">犬のペースで家の中を見せてあげます。無理に触ったり、大きな音を立てないように注意しましょう。</p>
+                                    </div>
+
+                                    <div class="step-card">
+                                        <div class="step-number">3</div>
+                                        <h6 class="fw-bold mb-2">水とフードを用意</h6>
+                                        <p class="mb-0">新鮮な水を常に飲めるようにします。フードは前の飼い主と同じものから始め、徐々に変更していきます。</p>
+                                    </div>
+
+                                    <div class="step-card">
+                                        <div class="step-number">4</div>
+                                        <h6 class="fw-bold mb-2">十分な休息</h6>
+                                        <p class="mb-0">環境の変化でストレスを感じています。ケージでゆっくり休ませてあげましょう。</p>
+                                    </div>
+
+                                    <div class="warning-box">
+                                        <h6 class="fw-bold mb-2">
+                                            <i class="bi bi-exclamation-triangle-fill text-warning"></i> 注意事項
+                                        </h6>
+                                        <ul class="mb-0">
+                                            <li>初日は来客を控える</li>
+                                            <li>子供がいる場合は、静かに接するよう指導</li>
+                                            <li>長時間構いすぎない（犬も疲れています）</li>
+                                            <li>逃げ出さないよう、ドアの開閉に注意</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#step3">
+                                    <i class="bi bi-3-circle-fill me-2" style="color: var(--primary-color);"></i>
+                                    日常のお世話
+                                </button>
+                            </h2>
+                            <div id="step3" class="accordion-collapse collapse" data-bs-parent="#dogGuideAccordion">
+                                <div class="accordion-body">
+                                    <h5 class="fw-bold mb-3">毎日のルーティン</h5>
+
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card border-0 bg-light p-3">
+                                                <h6 class="fw-bold mb-2">
+                                                    <i class="bi bi-sunrise text-warning"></i> 朝（6:00-9:00）
+                                                </h6>
+                                                <ul class="small mb-0">
+                                                    <li>散歩（20-30分）</li>
+                                                    <li>朝食</li>
+                                                    <li>水の交換</li>
+                                                    <li>トイレ掃除</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card border-0 bg-light p-3">
+                                                <h6 class="fw-bold mb-2">
+                                                    <i class="bi bi-sun text-warning"></i> 昼（12:00-15:00）
+                                                </h6>
+                                                <ul class="small mb-0">
+                                                    <li>短い散歩（可能なら）</li>
+                                                    <li>遊び時間</li>
+                                                    <li>水のチェック</li>
+                                                    <li>トイレ掃除</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card border-0 bg-light p-3">
+                                                <h6 class="fw-bold mb-2">
+                                                    <i class="bi bi-sunset text-warning"></i> 夕方（17:00-19:00）
+                                                </h6>
+                                                <ul class="small mb-0">
+                                                    <li>散歩（30-40分）</li>
+                                                    <li>夕食</li>
+                                                    <li>ブラッシング</li>
+                                                    <li>遊び・しつけ</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card border-0 bg-light p-3">
+                                                <h6 class="fw-bold mb-2">
+                                                    <i class="bi bi-moon-stars text-primary"></i> 夜（21:00-23:00）
+                                                </h6>
+                                                <ul class="small mb-0">
+                                                    <li>最後のトイレ</li>
+                                                    <li>水のチェック</li>
+                                                    <li>ケージで就寝</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#step4">
+                                                <i class="bi bi-4-circle-fill me-2"
+                                                    style="color: var(--primary-color);"></i>
+                                                しつけの基本
+                                            </button>
+                                        </h2>
+                                        <div id="step4" class="accordion-collapse collapse"
+                                            data-bs-parent="#dogGuideAccordion">
+                                            <div class="accordion-body">
+                                                <h5 class="fw-bold mb-3">基本コマンド</h5>
+
+                                                <div class="mb-4">
+                                                    <h6 class="fw-bold">1. おすわり</h6>
+                                                    <p>最も基本的なコマンド。おやつを使って練習しましょう。</p>
+                                                    <ol>
+                                                        <li>おやつを犬の鼻先に持っていく</li>
+                                                        <li>おやつを頭の上に移動させる</li>
+                                                        <li>自然とお尻が下がるので「おすわり」と言う</li>
+                                                        <li>座ったらすぐに褒めておやつを与える</li>
+                                                    </ol>
+                                                </div>
+
+                                                <div class="mb-4">
+                                                    <h6 class="fw-bold">2. まて</h6>
+                                                    <p>安全のために重要なコマンドです。</p>
+                                                    <ol>
+                                                        <li>「おすわり」の姿勢から始める</li>
+                                                        <li>手のひらを犬に向けて「まて」と言う</li>
+                                                        <li>1-2秒待てたらすぐ褒める</li>
+                                                        <li>徐々に待つ時間を延ばす</li>
+                                                    </ol>
+                                                </div>
+
+                                                <div class="tip-box">
+                                                    <h6 class="fw-bold mb-2">
+                                                        <i class="bi bi-lightbulb-fill text-warning"></i> しつけのコツ
+                                                    </h6>
+                                                    <ul class="mb-0">
+                                                        <li>短時間（5-10分）を1日に複数回</li>
+                                                        <li>成功したらすぐに褒める（タイミングが重要）</li>
+                                                        <li>失敗しても叱らない</li>
+                                                        <li>家族全員で統一したコマンドを使う</li>
+                                                        <li>犬の集中力が高い食前がおすすめ</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#step5">
+                                                <i class="bi bi-5-circle-fill me-2"
+                                                    style="color: var(--primary-color);"></i>
+                                                健康管理
+                                            </button>
+                                        </h2>
+                                        <div id="step5" class="accordion-collapse collapse"
+                                            data-bs-parent="#dogGuideAccordion">
+                                            <div class="accordion-body">
+                                                <h5 class="fw-bold mb-3">定期的な健康チェック</h5>
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>項目</th>
+                                                                <th>頻度</th>
+                                                                <th>チェックポイント</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><strong>ワクチン接種</strong></td>
+                                                                <td>年1回</td>
+                                                                <td>混合ワクチン、狂犬病ワクチン</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>健康診断</strong></td>
+                                                                <td>年1-2回</td>
+                                                                <td>血液検査、尿検査、レントゲン</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>フィラリア予防</strong></td>
+                                                                <td>月1回（4-11月）</td>
+                                                                <td>予防薬の投与</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>ノミ・ダニ予防</strong></td>
+                                                                <td>月1回</td>
+                                                                <td>予防薬の投与</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="warning-box mt-4">
+                                                    <h6 class="fw-bold mb-2">
+                                                        <i class="bi bi-exclamation-triangle-fill text-warning"></i>
+                                                        病院に連れて行くべきサイン
+                                                    </h6>
+                                                    <ul class="mb-0">
+                                                        <li>食欲がない（24時間以上）</li>
+                                                        <li>嘔吐・下痢が続く</li>
+                                                        <li>ぐったりして元気がない</li>
+                                                        <li>呼吸が荒い、咳をする</li>
+                                                        <li>歩き方がおかしい</li>
+                                                        <li>体を痛がる素振りを見せる</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                </section>
+            </div>
+
+            <!-- サイドバー -->
+            <div class="col-lg-4">
+                <!-- 動画ガイド -->
+                <div class="guide-card mb-4">
+                    <h5 class="fw-bold mb-3" style="color: var(--brown-color);">
+                        <i class="bi bi-play-circle"></i> 動画ガイド
+                    </h5>
+                    <div class="video-thumbnail">
+                        <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                    <h6 class="fw-bold mb-2">犬の基本的なしつけ方法</h6>
+                    <p class="text-muted small mb-3">再生時間: 15:32</p>
+                    <button class="btn btn-primary w-100 rounded-pill">
+                        <i class="bi bi-play-fill"></i> 再生する
+                    </button>
+                </div>
+
+                <!-- おすすめ記事 -->
+                <div class="guide-card mb-4">
+                    <h5 class="fw-bold mb-3" style="color: var(--brown-color);">
+                        <i class="bi bi-bookmark-star"></i> おすすめ記事
+                    </h5>
+                    <div class="mb-3 pb-3 border-bottom">
+                        <h6 class="fw-bold mb-1 small">犬の年齢と人間年齢の換算表</h6>
+                        <p class="text-muted small mb-0">愛犬は人間でいうと何歳？</p>
+                    </div>
+                    <div class="mb-3 pb-3 border-bottom">
+                        <h6 class="fw-bold mb-1 small">犬が食べてはいけない食べ物リスト</h6>
+                        <p class="text-muted small mb-0">危険な食材を知っておこう</p>
+                    </div>
+                    <div class="mb-0">
+                        <h6 class="fw-bold mb-1 small">犬種別の性格と特徴</h6>
+                        <p class="text-muted small mb-0">あなたの犬の性格を理解しよう</p>
+                    </div>
+                </div>
+
+                <!-- よく読まれているガイド -->
+                <div class="guide-card">
+                    <h5 class="fw-bold mb-3" style="color: var(--brown-color);">
+                        <i class="bi bi-fire"></i> 人気ランキング
+                    </h5>
+                    <ol class="ps-3">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <small class="fw-bold">犬のトイレトレーニング完全版</small>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <small class="fw-bold">子犬の育て方 - 生後3ヶ月まで</small>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <small class="fw-bold">犬の無駄吠え対策</small>
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <small class="fw-bold">散歩の正しい方法とマナー</small>
+                            </a>
+                        </li>
+                        <li class="mb-0">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <small class="fw-bold">老犬のケアと介護</small>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-heart-fill text-danger"></i> KicksLog
+                    </h5>
+                    <p>ペットとの幸せな暮らしを応援する情報サイト</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">サイト情報</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">利用規約</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">プライバシー</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold mb-3">サポート</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">ヘルプ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold mb-3">フォローする</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center mb-0">&copy; 2024 KicksLog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // アコーディオンの動作確認
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('飼い方ガイドページが読み込まれました');
+        });
+    </script>
+</body>
+
+</html>
+
+
