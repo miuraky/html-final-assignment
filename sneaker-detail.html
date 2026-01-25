@@ -7,63 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        
-    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="bi bi-heart-fill text-danger"></i> KicksLog</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">ペット図鑑</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">飼い方ガイド</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">飼育記録</a></li>
-                </ul>
-                <button class="btn btn-outline-success ms-3 rounded-pill fw-bold">
-                    <i class="bi bi-person-circle"></i> ログイン
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <div class="container mt-4">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">ホーム</a></li>
-                <li class="breadcrumb-item"><a href="#">ペット図鑑</a></li>
-                <li class="breadcrumb-item"><a href="#">犬</a></li>
-                <li class="breadcrumb-item active">柴犬</li>
+                <li class="breadcrumb-item"><a href="index.html">ホーム</a></li>
+                <li class="breadcrumb-item"><a href="sneaker-list.html">コレクション</a></li>
+                <li class="breadcrumb-item"><a href="#">NIKE</a></li>
+                <li class="breadcrumb-item active">Air Jordan 1 High</li>
             </ol>
         </nav>
 
-        <div id="petCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div id="sneakerCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#sneakerCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#sneakerCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#sneakerCarousel" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://placehold.co/1200x450/10b981/ffffff?text=Shiba+Inu+1" class="d-block w-100" alt="柴犬1">
+                    <img src="https://placehold.co/1200x600/e11d48/ffffff?text=AJ1+Chicago+Side" class="d-block w-100 rounded-3" alt="AJ1 Side">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/1200x450/f59e0b/ffffff?text=Shiba+Inu+2" class="d-block w-100" alt="柴犬2">
+                    <img src="https://placehold.co/1200x600/e11d48/ffffff?text=AJ1+Chicago+Front" class="d-block w-100 rounded-3" alt="AJ1 Front">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/1200x450/fb923c/ffffff?text=Shiba+Inu+3" class="d-block w-100" alt="柴犬3">
+                    <img src="https://placehold.co/1200x600/e11d48/ffffff?text=AJ1+Chicago+Sole" class="d-block w-100 rounded-3" alt="AJ1 Sole">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#sneakerCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#sneakerCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
@@ -71,13 +49,13 @@
         <div class="pet-header">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <span class="badge" style="background: #dcfce7; color: #10b981; padding: 10px 20px; border-radius: 50px; font-size: 1rem;">初心者向け</span>
-                    <h1 class="display-4 fw-bold mt-3 mb-3" style="color: var(--brown-color);">柴犬</h1>
-                    <p class="lead text-muted">忠実で賢く、家族思いの日本原産の犬種</p>
+                    <span class="badge" style="background: #fee2e2; color: #ef4444; padding: 10px 20px; border-radius: 50px; font-size: 1rem;">Chicago</span>
+                    <h1 class="display-4 fw-bold mt-3 mb-3" style="color: var(--brown-color);">Air Jordan 1 High OG</h1>
+                    <p class="lead text-muted">"Lost & Found" - ヴィンテージ加工が施された復刻モデル</p>
                 </div>
                 <div class="col-md-4 text-md-end">
-                    <button class="btn btn-success btn-lg rounded-pill mb-2 w-100"><i class="bi bi-heart"></i> お気に入り</button>
-                    <button class="btn btn-outline-warning btn-lg rounded-pill w-100"><i class="bi bi-share"></i> シェア</button>
+                    <button class="btn btn-danger btn-lg rounded-pill mb-2 w-100"><i class="bi bi-heart-fill"></i> お気に入り済</button>
+                    <button class="btn btn-outline-dark btn-lg rounded-pill w-100"><i class="bi bi-share"></i> シェア</button>
                 </div>
             </div>
         </div>
@@ -85,116 +63,66 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="info-card">
-                    <h3 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-info-circle-fill text-success"></i> 基本情報</h3>
+                    <h3 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-info-circle-fill text-danger"></i> スペック情報</h3>
                     <div class="row g-3 mb-4">
-                        <div class="col-md-3"><div class="stat-badge"><strong>サイズ</strong><br>中型</div></div>
-                        <div class="col-md-3"><div class="stat-badge"><strong>体重</strong><br>8-11kg</div></div>
-                        <div class="col-md-3"><div class="stat-badge"><strong>寿命</strong><br>12-15年</div></div>
-                        <div class="col-md-3"><div class="stat-badge"><strong>原産地</strong><br>日本</div></div>
+                        <div class="col-md-3"><div class="stat-badge"><strong>発売日</strong><br>2022/11/19</div></div>
+                        <div class="col-md-3"><div class="stat-badge"><strong>定価</strong><br>¥20,900</div></div>
+                        <div class="col-md-3"><div class="stat-badge"><strong>スタイルコード</strong><br>DZ5485-612</div></div>
+                        <div class="col-md-3"><div class="stat-badge"><strong>サイズ</strong><br>27.5cm</div></div>
                     </div>
-                    <p>柴犬は日本原産の小型から中型の犬種で、国の天然記念物に指定されています。忠実で勇敢な性格を持ち、家族に対して深い愛情を示します。独立心が強く、時に頑固な一面もありますが、適切なしつけを行えば素晴らしいパートナーとなります。</p>
+                    <p>スニーカーカルチャーの原点にして頂点。1985年に登場したオリジナルカラー「シカゴ」を、経年劣化したようなヴィンテージ加工で再現した一足。ひび割れたレザーの質感や、古いレシートが同梱されるなど、ストーリー性も完璧な仕上がり。</p>
                 </div>
 
-                <div class="accordion mb-4" id="petAccordion">
+                <div class="accordion mb-4" id="sneakerAccordion">
                     <div class="accordion-item mb-3" style="border: none; border-radius: 20px;">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#character">
-                                <i class="bi bi-heart me-2"></i> 性格・特徴
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#detail1">
+                                <i class="bi bi-journal-text me-2"></i> ヒストリー
                             </button>
                         </h2>
-                        <div id="character" class="accordion-collapse collapse show" data-bs-parent="#petAccordion">
+                        <div id="detail1" class="accordion-collapse collapse show" data-bs-parent="#sneakerAccordion">
                             <div class="accordion-body">
-                                <h5 class="fw-bold mb-3">性格</h5>
-                                <ul>
-                                    <li><strong>忠実:</strong> 家族に対して非常に忠実で、愛情深い</li>
-                                    <li><strong>勇敢:</strong> 小柄ながら勇敢で、番犬として優秀</li>
-                                    <li><strong>独立心:</strong> 独立心が強く、時に頑固な面も</li>
-                                    <li><strong>警戒心:</strong> 見知らぬ人には警戒心を示すことがある</li>
-                                </ul>
-                                <h5 class="fw-bold mb-3 mt-4">身体的特徴</h5>
-                                <ul>
-                                    <li>ピンと立った三角形の耳</li>
-                                    <li>くるりと巻いた尾</li>
-                                    <li>二重構造の被毛（換毛期には大量に抜ける）</li>
-                                    <li>赤、黒、胡麻、白の4色</li>
-                                </ul>
+                                <h5 class="fw-bold mb-3">伝説の始まり</h5>
+                                <p>マイケル・ジョーダンの初代シグネチャーモデルとして1985年に誕生。当時はNBAの規定に違反するカラーリングとして罰金を科されたという逸話（実際はAir Shipだが）も含め、伝説的な人気を誇る。</p>
+                                <p>この"Lost & Found"は、80年代の個人商店の在庫が忘れ去られ、数十年後に発見されたという架空のストーリーをコンセプトにしている。</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item mb-3" style="border: none; border-radius: 20px;">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#care">
-                                <i class="bi bi-clipboard-heart me-2"></i> 飼い方・ケア
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detail2">
+                                <i class="bi bi-rulers me-2"></i> サイズ感・着用感
                             </button>
                         </h2>
-                        <div id="care" class="accordion-collapse collapse" data-bs-parent="#petAccordion">
+                        <div id="detail2" class="accordion-collapse collapse" data-bs-parent="#sneakerAccordion">
                             <div class="accordion-body">
-                                <h5 class="fw-bold mb-3">日常のケア</h5>
+                                <h5 class="fw-bold mb-3">フィッティング</h5>
                                 <ul>
-                                    <li><strong>運動:</strong> 1日1-2回、30分程度の散歩が必要</li>
-                                    <li><strong>ブラッシング:</strong> 週2-3回。換毛期は毎日必要</li>
-                                    <li><strong>シャンプー:</strong> 月1-2回程度</li>
-                                    <li><strong>爪切り:</strong> 月1回程度</li>
+                                    <li><strong>縦幅:</strong> 標準的</li>
+                                    <li><strong>横幅:</strong> やや狭め</li>
+                                    <li><strong>甲の高さ:</strong> 標準的</li>
                                 </ul>
-                                <h5 class="fw-bold mb-3 mt-4">食事</h5>
-                                <ul>
-                                    <li>年齢や体重に応じた高品質なドッグフード</li>
-                                    <li>1日2回に分けて給餌</li>
-                                    <li>肥満に注意（適正体重の維持が重要）</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item mb-3" style="border: none; border-radius: 20px;">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#health">
-                                <i class="bi bi-heart-pulse me-2"></i> 健康管理
-                            </button>
-                        </h2>
-                        <div id="health" class="accordion-collapse collapse" data-bs-parent="#petAccordion">
-                            <div class="accordion-body">
-                                <h5 class="fw-bold mb-3">かかりやすい病気</h5>
-                                <ul>
-                                    <li><strong>皮膚疾患:</strong> アトピー性皮膚炎など</li>
-                                    <li><strong>股関節形成不全:</strong> 遺伝的要因が関与</li>
-                                    <li><strong>膝蓋骨脱臼:</strong> 小型犬に多い疾患</li>
-                                    <li><strong>白内障:</strong> 高齢になると発症しやすい</li>
-                                </ul>
-                                <h5 class="fw-bold mb-3 mt-4">予防と対策</h5>
-                                <ul>
-                                    <li>年1回の健康診断</li>
-                                    <li>定期的なワクチン接種</li>
-                                    <li>適切な体重管理</li>
-                                    <li>十分な運動</li>
-                                </ul>
+                                <p class="mt-3">普段履いているNIKEのスニーカーと同じサイズ（ジャストサイズ）で問題なし。幅広の足の人はハーフサイズアップ（+0.5cm）推奨。履き口のクッションが厚めなのでホールド感は高い。</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item" style="border: none; border-radius: 20px;">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#training">
-                                <i class="bi bi-award me-2"></i> しつけ
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detail3">
+                                <i class="bi bi-hammer me-2"></i> マテリアル
                             </button>
                         </h2>
-                        <div id="training" class="accordion-collapse collapse" data-bs-parent="#petAccordion">
+                        <div id="detail3" class="accordion-collapse collapse" data-bs-parent="#sneakerAccordion">
                             <div class="accordion-body">
-                                <h5 class="fw-bold mb-3">しつけのポイント</h5>
+                                <h5 class="fw-bold mb-3">素材の特徴</h5>
                                 <ul>
-                                    <li><strong>早期開始:</strong> 子犬の頃からの社会化が重要</li>
-                                    <li><strong>一貫性:</strong> 家族全員で統一したルールを</li>
-                                    <li><strong>ポジティブ強化:</strong> 褒めて伸ばす方法が効果的</li>
-                                    <li><strong>忍耐:</strong> 独立心が強いため、根気強く</li>
+                                    <li><strong>アッパー:</strong> 天然皮革（エイジング加工）</li>
+                                    <li><strong>シュータン:</strong> ナイロン（黄ばみ加工）</li>
+                                    <li><strong>アウトソール:</strong> ラバー（チョーク汚れ加工）</li>
                                 </ul>
-                                <h5 class="fw-bold mb-3 mt-4">基本的なしつけ</h5>
-                                <ul>
-                                    <li>トイレトレーニング</li>
-                                    <li>お座り、待て、伏せなどの基本コマンド</li>
-                                    <li>無駄吠え防止</li>
-                                    <li>散歩時の引っ張り癖の矯正</li>
-                                </ul>
+                                <p class="mt-3">特にアンクルカラーのひび割れ加工（クラックレザー）は個体差が激しく、コレクターの間で話題になった。カビのように見える加工もあるが仕様である。</p>
                             </div>
                         </div>
                     </div>
@@ -203,94 +131,52 @@
 
             <div class="col-lg-4">
                 <div class="sidebar-card">
-                    <h5 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-star-fill text-warning"></i> 飼いやすさ評価</h5>
+                    <h5 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-graph-up-arrow text-success"></i> マーケット相場</h5>
                     <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-2"><span>初心者向け</span><strong>★★★★☆</strong></div>
-                        <div class="progress" style="height: 10px; border-radius: 10px;">
-                            <div class="progress-bar" style="width: 80%; background: var(--primary-color);"></div>
+                        <div class="d-flex justify-content-between mb-2"><span>SNKRDUNK</span><strong>¥58,000</strong></div>
+                        <div class="progress" style="height: 6px; border-radius: 10px;">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-2"><span>お手入れ</span><strong>★★★☆☆</strong></div>
-                        <div class="progress" style="height: 10px; border-radius: 10px;">
-                            <div class="progress-bar" style="width: 60%; background: var(--secondary-color);"></div>
+                        <div class="d-flex justify-content-between mb-2"><span>StockX</span><strong>$380</strong></div>
+                        <div class="progress" style="height: 6px; border-radius: 10px;">
+                            <div class="progress-bar bg-success" style="width: 75%;"></div>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-2"><span>しつけやすさ</span><strong>★★★☆☆</strong></div>
-                        <div class="progress" style="height: 10px; border-radius: 10px;">
-                            <div class="progress-bar" style="width: 60%; background: var(--primary-color);"></div>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-2"><span>運動量</span><strong>★★★★☆</strong></div>
-                        <div class="progress" style="height: 10px; border-radius: 10px;">
-                            <div class="progress-bar" style="width: 80%; background: var(--secondary-color);"></div>
-                        </div>
-                    </div>
+                    <p class="text-muted small text-end">※2024年11月時点の概算</p>
                 </div>
 
                 <div class="sidebar-card">
-                    <h5 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-cash-coin"></i> 飼育費用の目安</h5>
-                    <div class="mb-2 d-flex justify-content-between"><span>初期費用</span><strong>¥150,000〜¥300,000</strong></div>
-                    <div class="mb-2 d-flex justify-content-between"><span>月額費用</span><strong>¥15,000〜¥25,000</strong></div>
-                    <div class="mb-2 d-flex justify-content-between"><span>年間医療費</span><strong>¥50,000〜¥100,000</strong></div>
+                    <h5 class="fw-bold mb-4" style="color: var(--brown-color);"><i class="bi bi-star-half text-warning"></i> マイ評価</h5>
+                    <div class="mb-2 d-flex justify-content-between"><span>デザイン</span><strong class="text-warning">★★★★★</strong></div>
+                    <div class="mb-2 d-flex justify-content-between"><span>履き心地</span><strong class="text-warning">★★★☆☆</strong></div>
+                    <div class="mb-2 d-flex justify-content-between"><span>レア度</span><strong class="text-warning">★★★★★</strong></div>
+                    <hr>
+                    <div class="mb-2 d-flex justify-content-between"><span>総合評価</span><strong class="fs-4 text-warning">4.8</strong></div>
                 </div>
 
                 <div class="sidebar-card">
                     <h5 class="fw-bold mb-3" style="color: var(--brown-color);"><i class="bi bi-tags"></i> タグ</h5>
                     <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-success">#日本犬</span>
-                        <span class="badge bg-warning text-dark">#中型犬</span>
-                        <span class="badge bg-info">#初心者OK</span>
-                        <span class="badge bg-danger">#忠実</span>
-                        <span class="badge bg-primary">#番犬</span>
+                        <span class="badge bg-danger">#NIKE</span>
+                        <span class="badge bg-dark">#Jordan1</span>
+                        <span class="badge bg-secondary">#Chicago</span>
+                        <span class="badge bg-warning text-dark">#Vintage</span>
+                        <span class="badge bg-primary">#HighCut</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-heart-fill text-danger"></i> KicksLog</h5>
-                    <p>ペットとの幸せな暮らしを応援する情報サイト</p>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サイト情報</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">プライバシー</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サポート</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h6 class="fw-bold mb-3">フォローする</h6>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="border-light">
-            <p class="text-center mb-0">&copy; 2024 KicksLog. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        renderNavbar("list");
+        renderFooter();
+    </script>
 </body>
 </html>
-
-

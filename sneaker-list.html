@@ -7,191 +7,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        :root {
-            --primary-color: #10b981;
-            --secondary-color: #f59e0b;
-            --accent-color: #fb923c;
-            --brown-color: #78350f;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fef3c7;
-        }
-        
-        .navbar {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: bold;
-            color: var(--primary-color) !important;
-            font-size: 1.5rem;
-        }
-        
-        .nav-link {
-            color: var(--brown-color) !important;
-            font-weight: 500;
-            margin: 0 10px;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #dcfce7 0%, #fed7aa 100%);
-            padding: 60px 0;
-            border-radius: 0 0 50px 50px;
-            margin-bottom: 40px;
-        }
-        
-        .filter-sidebar {
-            background: white;
-            border-radius: 30px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 20px;
-        }
-        
-        .filter-section {
-            margin-bottom: 30px;
-            padding-bottom: 25px;
-            border-bottom: 2px solid #f3f4f6;
-        }
-        
-        .filter-section:last-child {
-            border-bottom: none;
-        }
-        
-        .form-check-input:checked {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .pet-card {
-            background: white;
-            border-radius: 25px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .pet-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-        
-        .pet-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .difficulty-badge {
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-        
-        .sort-btn {
-            background: white;
-            border: 2px solid #e5e7eb;
-            border-radius: 50px;
-            padding: 10px 25px;
-            font-weight: 600;
-            color: var(--brown-color);
-            transition: all 0.2s ease;
-        }
-        
-        .sort-btn:hover, .sort-btn.active {
-            background: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-        
-        .category-filter {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 30px;
-        }
-        
-        .category-btn {
-            padding: 12px 25px;
-            border-radius: 50px;
-            border: 2px solid #e5e7eb;
-            background: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .category-btn:hover, .category-btn.active {
-            background: var(--secondary-color);
-            color: white;
-            border-color: var(--secondary-color);
-        }
-        
-        footer {
-            background-color: var(--brown-color);
-            color: white;
-            padding: 40px 0;
-            margin-top: 80px;
-            border-radius: 50px 50px 0 0;
-        }
-    </style>
 </head>
 <body>
     <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-heart-fill text-danger"></i> KicksLog
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ホーム</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">ペット図鑑</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">飼い方ガイド</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">飼育記録</a>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success ms-3 rounded-pill fw-bold">
-                    <i class="bi bi-person-circle"></i> ログイン
-                </button>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
 
     <!-- ページヘッダー -->
     <div class="page-header">
         <div class="container">
             <h1 class="display-4 fw-bold mb-3" style="color: var(--brown-color);">
-                <i class="bi bi-book"></i> ペット図鑑
+                <i class="bi bi-collection"></i> スニーカー図鑑
             </h1>
-            <p class="lead" style="color: #78350f;">500種類以上のペット情報を掲載</p>
+            <p class="lead" style="color: #78350f;">500種類以上のスニーカー情報を掲載</p>
             <div class="row mt-4">
                 <div class="col-md-8">
                     <div class="input-group input-group-lg">
                         <span class="input-group-text bg-white border-end-0 rounded-start-pill">
                             <i class="bi bi-search"></i>
                         </span>
-                        <input type="text" class="form-control border-start-0 rounded-end-pill" placeholder="ペットの種類や名前で検索...">
+                        <input type="text" class="form-control border-start-0 rounded-end-pill" placeholder="スニーカー名やブランドで検索...">
                     </div>
                 </div>
             </div>
@@ -209,48 +43,48 @@
                     
                     <!-- カテゴリ -->
                     <div class="filter-section">
-                        <h6 class="fw-bold mb-3">カテゴリ</h6>
+                        <h6 class="fw-bold mb-3">ブランド</h6>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat1" checked>
                             <label class="form-check-label" for="cat1">
-                                犬 <span class="badge bg-secondary">120</span>
+                                NIKE <span class="badge bg-secondary">120</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat2">
                             <label class="form-check-label" for="cat2">
-                                猫 <span class="badge bg-secondary">80</span>
+                                ADIDAS <span class="badge bg-secondary">80</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat3">
                             <label class="form-check-label" for="cat3">
-                                小動物 <span class="badge bg-secondary">45</span>
+                                New Balance <span class="badge bg-secondary">45</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat4">
                             <label class="form-check-label" for="cat4">
-                                鳥類 <span class="badge bg-secondary">35</span>
+                                VANS <span class="badge bg-secondary">35</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat5">
                             <label class="form-check-label" for="cat5">
-                                爬虫類 <span class="badge bg-secondary">28</span>
+                                CONVERSE <span class="badge bg-secondary">28</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="cat6">
                             <label class="form-check-label" for="cat6">
-                                魚類 <span class="badge bg-secondary">42</span>
+                                Other <span class="badge bg-secondary">42</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- 飼いやすさ -->
+                    <!-- レア度 -->
                     <div class="filter-section">
-                        <h6 class="fw-bold mb-3">飼いやすさ</h6>
+                        <h6 class="fw-bold mb-3">レア度</h6>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="difficulty" id="diff1">
                             <label class="form-check-label" for="diff1">
@@ -260,71 +94,48 @@
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="difficulty" id="diff2">
                             <label class="form-check-label" for="diff2">
-                                ★★★★★ 初心者向け
+                                ★★★★★ 超レア
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="difficulty" id="diff3">
                             <label class="form-check-label" for="diff3">
-                                ★★★★☆ やや簡単
+                                ★★★★☆ 限定品
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="difficulty" id="diff4">
                             <label class="form-check-label" for="diff4">
-                                ★★★☆☆ 普通
+                                ★★★☆☆ 人気モデル
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="radio" name="difficulty" id="diff5">
                             <label class="form-check-label" for="diff5">
-                                ★★☆☆☆ 経験者向け
+                                ★★☆☆☆ 一般
                             </label>
                         </div>
                     </div>
 
-                    <!-- サイズ -->
+                    <!-- カット -->
                     <div class="filter-section">
-                        <h6 class="fw-bold mb-3">サイズ</h6>
+                        <h6 class="fw-bold mb-3">カット</h6>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="size1">
                             <label class="form-check-label" for="size1">
-                                小型（〜5kg）
+                                High Cut
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="size2">
                             <label class="form-check-label" for="size2">
-                                中型（5〜20kg）
+                                Mid Cut
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="size3">
                             <label class="form-check-label" for="size3">
-                                大型（20kg〜）
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- 活動レベル -->
-                    <div class="filter-section">
-                        <h6 class="fw-bold mb-3">活動レベル</h6>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="activity1">
-                            <label class="form-check-label" for="activity1">
-                                活発
-                            </label>
-                        </div>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="activity2">
-                            <label class="form-check-label" for="activity2">
-                                普通
-                            </label>
-                        </div>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="activity3">
-                            <label class="form-check-label" for="activity3">
-                                おとなしい
+                                Low Cut
                             </label>
                         </div>
                     </div>
@@ -335,17 +146,16 @@
                 </div>
             </div>
 
-            <!-- ペット一覧 -->
+            <!-- スニーカー一覧 -->
             <div class="col-lg-9">
                 <!-- カテゴリクイックフィルター -->
                 <div class="category-filter">
                     <button class="category-btn active">すべて</button>
-                    <button class="category-btn">🐕 犬</button>
-                    <button class="category-btn">🐈 猫</button>
-                    <button class="category-btn">🐹 小動物</button>
-                    <button class="category-btn">🦜 鳥類</button>
-                    <button class="category-btn">🦎 爬虫類</button>
-                    <button class="category-btn">🐠 魚類</button>
+                    <button class="category-btn">NIKE</button>
+                    <button class="category-btn">ADIDAS</button>
+                    <button class="category-btn">New Balance</button>
+                    <button class="category-btn">VANS</button>
+                    <button class="category-btn">CONVERSE</button>
                 </div>
 
                 <!-- ソートとカウント -->
@@ -355,31 +165,31 @@
                     </h5>
                     <div class="d-flex gap-2">
                         <button class="sort-btn active">人気順</button>
-                        <button class="sort-btn">名前順</button>
-                        <button class="sort-btn">飼いやすさ順</button>
+                        <button class="sort-btn">新着順</button>
+                        <button class="sort-btn">価格順</button>
                     </div>
                 </div>
 
-                <!-- ペットカード -->
+                <!-- カード一覧 -->
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="pet-card">
-                            <img src="https://placehold.co/300x200/10b981/ffffff?text=Shiba+Inu" class="pet-img" alt="柴犬">
+                            <img src="https://placehold.co/300x200/10b981/ffffff?text=Air+Jordan+1" class="pet-img" alt="AJ1">
                             <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">柴犬</h5>
-                                <p class="text-muted small mb-3">忠実で賢く、家族思いの日本原産の犬種</p>
+                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">NIKE</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Air Jordan 1 High</h5>
+                                <p class="text-muted small mb-3">スニーカーカルチャーの象徴的存在。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">中型</strong>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">High</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">SS</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -388,22 +198,22 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="pet-card">
-                            <img src="https://placehold.co/300x200/f59e0b/ffffff?text=Golden+Retriever" class="pet-img" alt="ゴールデンレトリバー">
+                            <img src="https://placehold.co/300x200/f59e0b/ffffff?text=Samba+OG" class="pet-img" alt="Samba">
                             <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">ゴールデンレトリバー</h5>
-                                <p class="text-muted small mb-3">優しく穏やかで家族に愛情深い大型犬</p>
+                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">ADIDAS</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Samba OG</h5>
+                                <p class="text-muted small mb-3">クラシックなデザインが再評価。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">大型</strong>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">S</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -412,22 +222,46 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="pet-card">
-                            <img src="https://placehold.co/300x200/fb923c/ffffff?text=Chihuahua" class="pet-img" alt="チワワ">
+                            <img src="https://placehold.co/300x200/fb923c/ffffff?text=990v6" class="pet-img" alt="990v6">
                             <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">チワワ</h5>
-                                <p class="text-muted small mb-3">世界最小の犬種。愛らしく勇敢な性格</p>
+                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">New Balance</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">990v6</h5>
+                                <p class="text-muted small mb-3">究極の履き心地を実現。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">小型</strong>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">普通</strong>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">A</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                    詳細を見る <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pet-card">
+                            <img src="https://placehold.co/300x200/ec4899/ffffff?text=Air+Max+95" class="pet-img" alt="Air Max 95">
+                            <div class="p-3">
+                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">NIKE</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Air Max 95</h5>
+                                <p class="text-muted small mb-3">人体構造をモチーフにしたデザイン。</p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">Low</strong>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">A</strong>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -436,22 +270,22 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="pet-card">
-                            <img src="https://placehold.co/300x200/ec4899/ffffff?text=Poodle" class="pet-img" alt="トイプードル">
+                            <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=Superstar" class="pet-img" alt="Superstar">
                             <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">トイプードル</h5>
-                                <p class="text-muted small mb-3">賢く社交的。抜け毛が少なく飼いやすい</p>
+                                <span class="badge difficulty-badge" style="background: #fef3c7; color: #f59e0b;">ADIDAS</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Superstar</h5>
+                                <p class="text-muted small mb-3">50年以上愛され続ける名作。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">小型</strong>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">B</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -460,118 +294,22 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="pet-card">
-                            <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=French+Bulldog" class="pet-img" alt="フレンチブルドッグ">
+                            <img src="https://placehold.co/300x200/06b6d4/ffffff?text=Old+Skool" class="pet-img" alt="Old Skool">
                             <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #fef3c7; color: #f59e0b;">やや簡単</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">フレンチブルドッグ</h5>
-                                <p class="text-muted small mb-3">愛嬌があり人懐っこい。運動量は少なめ</p>
+                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">VANS</span>
+                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Old Skool</h5>
+                                <p class="text-muted small mb-3">サイドストライプが特徴の定番。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">中型</strong>
+                                        <small class="text-muted d-block">カット</small>
+                                        <strong style="color: var(--primary-color);">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">普通</strong>
+                                        <small class="text-muted d-block">人気度</small>
+                                        <strong style="color: var(--secondary-color);">A</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
-                                    詳細を見る <i class="bi bi-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/06b6d4/ffffff?text=Pomeranian" class="pet-img" alt="ポメラニアン">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">ポメラニアン</h5>
-                                <p class="text-muted small mb-3">ふわふわの被毛が特徴。活発で遊び好き</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">小型</strong>
-                                    </div>
-                                    <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
-                                    詳細を見る <i class="bi bi-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/14b8a6/ffffff?text=Corgi" class="pet-img" alt="コーギー">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #fef3c7; color: #f59e0b;">やや簡単</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">ウェルシュコーギー</h5>
-                                <p class="text-muted small mb-3">短い足と長い胴が特徴。明るく友好的</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">中型</strong>
-                                    </div>
-                                    <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
-                                    詳細を見る <i class="bi bi-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/3b82f6/ffffff?text=Miniature+Schnauzer" class="pet-img" alt="ミニチュアシュナウザー">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">初心者向け</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">ミニチュアシュナウザー</h5>
-                                <p class="text-muted small mb-3">ひげが特徴的。賢く忠実な性格</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">小型</strong>
-                                    </div>
-                                    <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
-                                    詳細を見る <i class="bi bi-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/ef4444/ffffff?text=Beagle" class="pet-img" alt="ビーグル">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #fef3c7; color: #f59e0b;">やや簡単</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">ビーグル</h5>
-                                <p class="text-muted small mb-3">元気で明るい性格。好奇心旺盛な猟犬</p>
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <div>
-                                        <small class="text-muted d-block">サイズ</small>
-                                        <strong style="color: var(--primary-color);">中型</strong>
-                                    </div>
-                                    <div>
-                                        <small class="text-muted d-block">活動量</small>
-                                        <strong style="color: var(--secondary-color);">活発</strong>
-                                    </div>
-                                </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill">
+                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -588,10 +326,7 @@
                         <li class="page-item active"><a class="page-link rounded-pill" href="#">1</a></li>
                         <li class="page-item"><a class="page-link rounded-pill" href="#">2</a></li>
                         <li class="page-item"><a class="page-link rounded-pill" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link rounded-pill" href="#">4</a></li>
-                        <li class="page-item"><a class="page-link rounded-pill" href="#">5</a></li>
                         <li class="page-item disabled"><a class="page-link rounded-pill" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link rounded-pill" href="#">14</a></li>
                         <li class="page-item">
                             <a class="page-link rounded-pill" href="#"><i class="bi bi-chevron-right"></i></a>
                         </li>
@@ -602,47 +337,14 @@
     </div>
 
     <!-- フッター -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-heart-fill text-danger"></i> KicksLog
-                    </h5>
-                    <p>ペットとの幸せな暮らしを応援する情報サイト</p>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サイト情報</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">利用規約</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">プライバシー</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サポート</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h6 class="fw-bold mb-3">フォローする</h6>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="border-light">
-            <p class="text-center mb-0">&copy; 2024 KicksLog. All rights reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script>
+        renderNavbar('list');
+        renderFooter();
+    </script>
 </body>
 </html>
 
