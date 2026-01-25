@@ -8,34 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        
-    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <i class="bi bi-heart-fill text-danger"></i> KicksLog
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ペット図鑑</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">飼い方ガイド</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">飼育記録</a></li>
-                </ul>
-                <button class="btn btn-outline-success ms-3 rounded-pill fw-bold">
-                    <i class="bi bi-person-circle"></i> ログイン
-                </button>
-            </div>
-        </div>
-    </nav>
+    <!-- ナビゲーションバー -->
+    <div id="navbar-placeholder"></div>
 
     <div class="page-header">
         <div class="container">
@@ -44,13 +21,13 @@
                     <i class="bi bi-chat-dots-fill"></i> Q&A・お悩み相談
                 </h1>
                 <p class="lead" style="color: var(--brown-color);">
-                    ペットに関する疑問や悩みを解決しましょう
+                    スニーカーに関する疑問や悩みを解決しましょう
                 </p>
             </div>
 
             <div class="search-box">
                 <div class="d-flex align-items-center">
-                    <input type="text" class="flex-grow-1" placeholder="質問を検索...（例：犬のしつけ、猫の健康）">
+                    <input type="text" class="flex-grow-1" placeholder="質問を検索...（例：サイズ感、加水分解、本物）">
                     <button type="button"><i class="bi bi-search"></i> 検索</button>
                 </div>
             </div>
@@ -79,19 +56,19 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="pill" data-bs-target="#dog" type="button"
                                 role="tab">
-                                <i class="bi bi-emoji-smile"></i> 犬
+                                <i class="bi bi-rulers"></i> サイズ感
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="pill" data-bs-target="#cat" type="button"
                                 role="tab">
-                                <i class="bi bi-emoji-heart-eyes"></i> 猫
+                                <i class="bi bi-tools"></i> ケア
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" data-bs-toggle="pill" data-bs-target="#health" type="button"
                                 role="tab">
-                                <i class="bi bi-heart-pulse"></i> 健康
+                                <i class="bi bi-cart"></i> 購入
                             </button>
                         </li>
                     </ul>
@@ -105,24 +82,24 @@
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq1">
                                         <i class="bi bi-question-circle-fill text-primary me-2"></i>
-                                        子犬のトイレトレーニングがうまくいきません
+                                        Air Jordan 1のサイズ感について教えてください
                                     </button>
                                 </h2>
                                 <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
                                         <div class="mb-3">
-                                            <span class="badge-category">犬</span>
-                                            <span class="badge-category" style="background: #8b5cf6;">しつけ</span>
+                                            <span class="badge-category">NIKE</span>
+                                            <span class="badge-category" style="background: #8b5cf6;">サイズ</span>
                                         </div>
                                         <div class="answer-highlight">
                                             <h6 class="fw-bold text-success mb-2">
                                                 <i class="bi bi-check-circle-fill"></i> ベストアンサー
                                             </h6>
-                                            <p>トイレトレーニングは根気が必要です。成功したら褒めること、失敗しても叱らないことが重要です。</p>
+                                            <p>基本的に普段のサイズ（ジャストサイズ）またはハーフサイズ（0.5cm）アップがおすすめです。幅広の足の方はハーフアップが安心です。</p>
                                         </div>
                                         <div class="question-meta">
                                             <div class="meta-item">
-                                                <i class="bi bi-person-circle"></i><span>ドッグトレーナー山田</span>
+                                                <i class="bi bi-person-circle"></i><span>KicksMaster</span>
                                             </div>
                                             <div class="meta-item">
                                                 <i class="bi bi-hand-thumbs-up"></i><span>312人が参考になった</span>
@@ -141,28 +118,65 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq2">
-                                        <i class="bi bi-question-circle-fill text-primary me-2"></i>
-                                        猫が急にご飯を食べなくなりました
+                                    <i class="bi bi-question-circle-fill text-primary me-2"></i>
+                                        ソールが加水分解してしまいました。修理可能ですか？
                                     </button>
                                 </h2>
                                 <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                     <div class="accordion-body">
                                         <div class="mb-3">
-                                            <span class="badge-category" style="background: #fb923c;">猫</span>
-                                            <span class="badge-category" style="background: #ef4444;">健康</span>
+                                            <span class="badge-category" style="background: #fb923c;">全般</span>
+                                            <span class="badge-category" style="background: #ef4444;">修理</span>
                                         </div>
                                         <div class="answer-highlight">
                                             <h6 class="fw-bold text-success mb-2">
                                                 <i class="bi bi-check-circle-fill"></i> ベストアンサー
                                             </h6>
-                                            <p>24時間以上食事を取らない場合は早めに動物病院を受診してください。</p>
+                                            <p>加水分解したソールは元に戻せません。ただし、「ソールスワップ」という専門店での移植修理なら可能です。</p>
                                         </div>
                                         <div class="question-meta">
                                             <div class="meta-item">
-                                                <i class="bi bi-person-circle"></i><span>獣医師・佐藤</span>
+                                                <i class="bi bi-person-circle"></i><span>RepairPro</span>
                                             </div>
                                             <div class="meta-item">
                                                 <i class="bi bi-hand-thumbs-up"></i><span>487人が参考になった</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button class="helpful-btn">
+                                                <i class="bi bi-hand-thumbs-up"></i> 参考になった
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                    <i class="bi bi-question-circle-fill text-primary me-2"></i>
+                                        本物と偽物の見分け方のポイントは？
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        <div class="mb-3">
+                                            <span class="badge-category" style="background: #06b6d4;">鑑定</span>
+                                            <span class="badge-category" style="background: #ef4444;">注意</span>
+                                        </div>
+                                        <div class="answer-highlight">
+                                            <h6 class="fw-bold text-success mb-2">
+                                                <i class="bi bi-check-circle-fill"></i> ベストアンサー
+                                            </h6>
+                                            <p>ボックスのラベル、縫製の粗さ、インソールのプリント、そして特有の匂いがポイントです。不安な場合は鑑定サービスを利用しましょう。</p>
+                                        </div>
+                                        <div class="question-meta">
+                                            <div class="meta-item">
+                                                <i class="bi bi-person-circle"></i><span>SneakerHead</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="bi bi-hand-thumbs-up"></i><span>890人が参考になった</span>
                                             </div>
                                         </div>
                                         <div class="mt-3">
@@ -192,21 +206,21 @@
                     <div class="ranking-item">
                         <div class="ranking-number gold">1</div>
                         <div>
-                            <h6 class="fw-bold mb-1 small">子犬のワクチン接種スケジュール</h6>
+                            <h6 class="fw-bold mb-1 small">Yeezy Boost 350のサイズ感</h6>
                             <small class="text-muted">523人が参考にしました</small>
                         </div>
                     </div>
                     <div class="ranking-item">
                         <div class="ranking-number silver">2</div>
                         <div>
-                            <h6 class="fw-bold mb-1 small">猫の発情期の対処法</h6>
+                            <h6 class="fw-bold mb-1 small">黄ばみを取る最強の方法</h6>
                             <small class="text-muted">487人が参考にしました</small>
                         </div>
                     </div>
                     <div class="ranking-item">
                         <div class="ranking-number bronze">3</div>
                         <div>
-                            <h6 class="fw-bold mb-1 small">ハムスターの寿命について</h6>
+                            <h6 class="fw-bold mb-1 small">StockXとSNKRDUNKどっちがいい？</h6>
                             <small class="text-muted">412人が参考にしました</small>
                         </div>
                     </div>
@@ -215,46 +229,15 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5 class="fw-bold mb-3">
-                        <i class="bi bi-heart-fill text-danger"></i> KicksLog
-                    </h5>
-                    <p>ペットとの幸せな暮らしを応援する情報サイト</p>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サイト情報</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">利用規約</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h6 class="fw-bold mb-3">サポート</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">ヘルプ</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h6 class="fw-bold mb-3">フォローする</h6>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
-                        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <hr class="border-light">
-            <p class="text-center mb-0">&copy; 2024 KicksLog. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- フッター -->
+    <div id="footer-placeholder"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
     <script>
+        renderNavbar('faq');
+        renderFooter();
+
         document.querySelectorAll('.helpful-btn').forEach(button => {
             button.addEventListener('click', function () {
                 if (this.innerHTML.includes('参考になった')) {
@@ -272,5 +255,4 @@
 </body>
 
 </html>
-
 
