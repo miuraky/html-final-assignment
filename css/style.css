@@ -2,16 +2,16 @@
 
 /* Common Variables */
 :root {
-    --primary-color: #10b981;
-    --secondary-color: #f59e0b;
-    --accent-color: #fb923c;
-    --brown-color: #78350f;
+    --primary-color: #4f46e5;
+    --secondary-color: #0ea5e9;
+    --accent-color: #f43f5e;
+    --brown-color: #1f2937;
 }
 
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fef3c7;
+    background-color: #f3f4f6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ footer {
 
 /* Headers & Sections */
 .page-header, .hero-section {
-    background: linear-gradient(135deg, #dcfce7 0%, #fed7aa 100%);
+    background: linear-gradient(135deg, #e0e7ff 0%, #fae8ff 100%);
     padding: 60px 0;
     border-radius: 0 0 50px 50px;
     margin-bottom: 40px;
@@ -94,8 +94,7 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.pet-card, .feature-card, .info-card, .stats-box, .guide-card, .step-card {
-    @extend .card-common; /* Note: CSS doesn't support @extend, just concept */
+.feature-card, .info-card, .stats-box, .guide-card, .step-card {
     background: white;
     border-radius: 25px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -108,7 +107,7 @@ footer {
 .guide-card { padding: 25px; border-radius: 20px; }
 .info-card { padding: 30px; }
 
-.pet-card:hover, .feature-card:hover, .guide-card:hover {
+.feature-card:hover, .guide-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -125,20 +124,12 @@ footer {
     50% { transform: translateY(-20px); }
 }
 
-.pet-icon, .feature-icon, .category-icon, .guide-icon, .stat-icon {
+.feature-icon, .category-icon, .guide-icon, .stat-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 auto 20px;
-}
-
-.pet-icon {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    font-size: 3rem;
-    color: white;
 }
 
 .feature-icon {
@@ -150,16 +141,6 @@ footer {
 }
 
 /* Badges & Buttons */
-.category-badge {
-    background: var(--secondary-color);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    display: inline-block;
-    margin-bottom: 15px;
-}
-
 .btn-primary-custom, .btn-submit, .btn-post-question, .btn-add-record {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border: none;
@@ -197,7 +178,7 @@ footer {
 
 /* Accordion */
 .accordion-button:not(.collapsed) {
-    background: linear-gradient(135deg, #dcfce7, #fed7aa);
+    background: linear-gradient(135deg, #e0e7ff, #fae8ff);
     color: var(--brown-color);
     box-shadow: none;
 }
@@ -234,7 +215,7 @@ footer {
 }
 
 .table-custom thead {
-    background: linear-gradient(135deg, #dcfce7, #fed7aa);
+    background: linear-gradient(135deg, #e0e7ff, #fae8ff);
 }
 .table-custom th {
     color: var(--brown-color);

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - KicksLog</title>
+    <title>Contact - UrbanKicks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2589/2589903.png">
 </head>
 <body>
     <!-- ナビゲーションバー -->
@@ -16,11 +17,11 @@
     <div class="page-header">
         <div class="container">
             <div class="text-center">
-                <h1 class="display-4 fw-bold mb-3" style="color: var(--brown-color);">
-                    <i class="bi bi-envelope-paper"></i> お問い合わせ
+                <h1 class="display-4 fw-bold mb-3 text-brown">
+                    <i class="bi bi-envelope-paper"></i> Contact Us
                 </h1>
-                <p class="lead" style="color: var(--brown-color);">
-                    ご質問・ご要望はこちらからお気軽にお寄せください
+                <p class="lead text-brown">
+                    Feel free to send us your questions and requests.
                 </p>
             </div>
         </div>
@@ -35,17 +36,17 @@
                         <!-- お問い合わせ種別 -->
                         <div class="form-section">
                             <h4 class="section-title">
-                                <i class="bi bi-tag-fill"></i> お問い合わせ種別
+                                <i class="bi bi-tag-fill"></i> Inquiry Type
                             </h4>
                             <div class="mb-3">
-                                <label class="form-label">ご用件 <span class="required-mark">*</span></label>
+                                <label class="form-label">Subject <span class="required-mark">*</span></label>
                                 <select class="form-select" required>
-                                    <option value="" selected disabled>選択してください</option>
-                                    <option value="1">サービスの不具合について</option>
-                                    <option value="2">アカウントについて</option>
-                                    <option value="3">掲載情報への修正依頼</option>
-                                    <option value="4">広告掲載について</option>
-                                    <option value="5">その他</option>
+                                    <option value="" selected disabled>Please select</option>
+                                    <option value="1">Bug Report</option>
+                                    <option value="2">Account Issues</option>
+                                    <option value="3">Correction Request</option>
+                                    <option value="4">Advertising</option>
+                                    <option value="5">Other</option>
                                 </select>
                             </div>
                         </div>
@@ -53,20 +54,20 @@
                         <!-- お客様情報 -->
                         <div class="form-section">
                             <h4 class="section-title">
-                                <i class="bi bi-person-fill"></i> お客様情報
+                                <i class="bi bi-person-fill"></i> Your Information
                             </h4>
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <label class="form-label">お名前 <span class="required-mark">*</span></label>
-                                    <input type="text" class="form-control" placeholder="山田 太郎" required>
+                                    <label class="form-label">Name <span class="required-mark">*</span></label>
+                                    <input type="text" class="form-control" placeholder="John Doe" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label">メールアドレス <span class="required-mark">*</span></label>
+                                    <label class="form-label">Email <span class="required-mark">*</span></label>
                                     <input type="email" class="form-control" placeholder="example@email.com" required>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label">KicksLog ID（お持ちの方のみ）</label>
-                                    <input type="text" class="form-control" placeholder="例：user1234">
+                                    <label class="form-label">UrbanKicks ID (Optional)</label>
+                                    <input type="text" class="form-control" placeholder="e.g. user1234">
                                 </div>
                             </div>
                         </div>
@@ -74,24 +75,24 @@
                         <!-- お問い合わせ内容 -->
                         <div class="form-section">
                             <h4 class="section-title">
-                                <i class="bi bi-chat-text-fill"></i> お問い合わせ内容
+                                <i class="bi bi-chat-text-fill"></i> Message
                             </h4>
                             <div class="mb-3">
-                                <label class="form-label">件名 <span class="required-mark">*</span></label>
-                                <input type="text" class="form-control" placeholder="件名を入力してください" required>
+                                <label class="form-label">Subject <span class="required-mark">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter subject" required>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">詳細内容 <span class="required-mark">*</span></label>
-                                <textarea class="form-control" rows="6" placeholder="具体的にお書きください..." required></textarea>
+                                <label class="form-label">Details <span class="required-mark">*</span></label>
+                                <textarea class="form-control" rows="6" placeholder="Please describe in detail..." required></textarea>
                             </div>
                             
                             <!-- 画像アップロード -->
                             <div class="mb-3">
-                                <label class="form-label">参考画像（任意）</label>
+                                <label class="form-label">Images (Optional)</label>
                                 <div class="file-upload-area">
                                     <i class="bi bi-cloud-arrow-up"></i>
-                                    <div class="upload-text">クリックして画像をアップロード</div>
-                                    <div class="upload-hint">またはドラッグ＆ドロップ（最大3枚まで）</div>
+                                    <div class="upload-text">Click to upload images</div>
+                                    <div class="upload-hint">or drag & drop (Max 3 images)</div>
                                     <input type="file" hidden multiple accept="image/*">
                                 </div>
                             </div>
@@ -99,11 +100,11 @@
 
                         <div class="text-center mt-5">
                             <button type="submit" class="btn btn-submit shadow-lg px-5">
-                                <i class="bi bi-send-fill me-2"></i> 送信する
+                                <i class="bi bi-send-fill me-2"></i> Send Message
                             </button>
                             <p class="help-text mt-3">
-                                ※通常3営業日以内にご返信いたします。<br>
-                                ※プライバシーポリシーに同意の上、送信してください。
+                                * We usually reply within 3 business days.<br>
+                                * Please agree to our Privacy Policy before sending.
                             </p>
                         </div>
                     </form>
@@ -114,44 +115,44 @@
             <div class="col-lg-4">
                 <div class="card-common p-4 mb-4">
                     <h5 class="fw-bold mb-3 text-brown">
-                        <i class="bi bi-question-circle-fill text-warning"></i> よくある質問
+                        <i class="bi bi-question-circle-fill text-warning"></i> FAQ
                     </h5>
-                    <p class="text-muted small mb-3">お問い合わせの前に、FAQをご確認いただくと解決する場合があります。</p>
+                    <p class="text-muted small mb-3">Checking FAQ might resolve your issue faster.</p>
                     
                     <div class="list-group list-group-flush mb-3">
                         <a href="sneaker-faq.html" class="list-group-item list-group-item-action border-0 px-0">
-                            <i class="bi bi-chevron-right text-primary me-2"></i> パスワードを忘れました
+                            <i class="bi bi-chevron-right text-primary me-2"></i> Forgot Password
                         </a>
                         <a href="sneaker-faq.html" class="list-group-item list-group-item-action border-0 px-0">
-                            <i class="bi bi-chevron-right text-primary me-2"></i> 退会方法を教えてください
+                            <i class="bi bi-chevron-right text-primary me-2"></i> How to delete account
                         </a>
                         <a href="sneaker-faq.html" class="list-group-item list-group-item-action border-0 px-0">
-                            <i class="bi bi-chevron-right text-primary me-2"></i> 画像がアップロードできません
+                            <i class="bi bi-chevron-right text-primary me-2"></i> Cannot upload images
                         </a>
                     </div>
                     
                     <a href="sneaker-faq.html" class="btn btn-outline-primary w-100 rounded-pill">
-                        FAQページを見る <i class="bi bi-arrow-right"></i>
+                        View FAQ <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
 
                 <div class="card-common p-4">
                     <h5 class="fw-bold mb-3 text-brown">
-                        <i class="bi bi-clock-fill text-success"></i> サポート受付時間
+                        <i class="bi bi-clock-fill text-success"></i> Support Hours
                     </h5>
                     <ul class="list-unstyled text-muted">
                         <li class="mb-2 d-flex justify-content-between">
-                            <span>平日</span>
+                            <span>Mon-Fri</span>
                             <strong>10:00 - 18:00</strong>
                         </li>
                         <li class="mb-2 d-flex justify-content-between">
-                            <span>土日祝</span>
-                            <strong>休業</strong>
+                            <span>Sat-Sun/Holidays</span>
+                            <strong>Closed</strong>
                         </li>
                     </ul>
                     <hr>
                     <small class="d-block text-muted">
-                        ※お電話でのサポートは行っておりません。<br>フォームよりお問い合わせください。
+                        * No phone support available.<br>Please use this form.
                     </small>
                 </div>
             </div>

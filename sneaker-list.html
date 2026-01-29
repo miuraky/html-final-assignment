@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collection - KicksLog</title>
+    <title>Collection - UrbanKicks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2589/2589903.png">
 </head>
 <body>
     <!-- ナビゲーションバー -->
@@ -15,10 +16,10 @@
     <!-- ページヘッダー -->
     <div class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3" style="color: var(--brown-color);">
+            <h1 class="display-4 fw-bold mb-3 text-brown">
                 <i class="bi bi-collection"></i> スニーカー図鑑
             </h1>
-            <p class="lead" style="color: #78350f;">500種類以上のスニーカー情報を掲載</p>
+            <p class="lead text-brown">500足以上のスニーカー情報を掲載</p>
             <div class="row mt-4">
                 <div class="col-md-8">
                     <div class="input-group input-group-lg">
@@ -37,7 +38,7 @@
             <!-- フィルターサイドバー -->
             <div class="col-lg-3">
                 <div class="filter-sidebar">
-                    <h5 class="fw-bold mb-4" style="color: var(--brown-color);">
+                    <h5 class="fw-bold mb-4 text-brown">
                         <i class="bi bi-funnel-fill"></i> 絞り込み
                     </h5>
                     
@@ -160,7 +161,7 @@
 
                 <!-- ソートとカウント -->
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h5 class="mb-0" style="color: var(--brown-color);">
+                    <h5 class="mb-0 text-brown">
                         検索結果: <span class="fw-bold text-success">120件</span>
                     </h5>
                     <div class="d-flex gap-2">
@@ -172,144 +173,144 @@
 
                 <!-- カード一覧 -->
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/10b981/ffffff?text=Air+Jordan+1" class="pet-img" alt="AJ1">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">NIKE</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Air Jordan 1 High</h5>
-                                <p class="text-muted small mb-3">スニーカーカルチャーの象徴的存在。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/10b981/ffffff?text=Air+Jordan+1" class="card-img-top" alt="AJ1">
+                            <div class="card-body p-4">
+                                <span class="badge bg-secondary mb-2">NIKE</span>
+                                <h5 class="card-title fw-bold mb-2">Air Jordan 1 High</h5>
+                                <p class="card-text text-muted small mb-3">スニーカーカルチャーの象徴的存在。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">High</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">High</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">SS</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">SS</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-success w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/f59e0b/ffffff?text=Samba+OG" class="pet-img" alt="Samba">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">ADIDAS</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Samba OG</h5>
-                                <p class="text-muted small mb-3">クラシックなデザインが再評価。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/f59e0b/ffffff?text=Samba+OG" class="card-img-top" alt="Samba">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark mb-2">ADIDAS</span>
+                                <h5 class="card-title fw-bold mb-2">Samba OG</h5>
+                                <p class="card-text text-muted small mb-3">クラシックなデザインが再評価。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">Low</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">S</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">S</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-warning w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/fb923c/ffffff?text=990v6" class="pet-img" alt="990v6">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">New Balance</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">990v6</h5>
-                                <p class="text-muted small mb-3">究極の履き心地を実現。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/fb923c/ffffff?text=990v6" class="card-img-top" alt="990v6">
+                            <div class="card-body p-4">
+                                <span class="badge bg-info text-dark mb-2">New Balance</span>
+                                <h5 class="card-title fw-bold mb-2">990v6</h5>
+                                <p class="card-text text-muted small mb-3">究極の履き心地を実現。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">Low</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">A</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">A</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-info w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/ec4899/ffffff?text=Air+Max+95" class="pet-img" alt="Air Max 95">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">NIKE</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Air Max 95</h5>
-                                <p class="text-muted small mb-3">人体構造をモチーフにしたデザイン。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/ec4899/ffffff?text=Air+Max+95" class="card-img-top" alt="Air Max 95">
+                            <div class="card-body p-4">
+                                <span class="badge bg-secondary mb-2">NIKE</span>
+                                <h5 class="card-title fw-bold mb-2">Air Max 95</h5>
+                                <p class="card-text text-muted small mb-3">人体構造をモチーフにしたデザイン。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">Low</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">A</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">A</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-success w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=Superstar" class="pet-img" alt="Superstar">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #fef3c7; color: #f59e0b;">ADIDAS</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Superstar</h5>
-                                <p class="text-muted small mb-3">50年以上愛され続ける名作。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/8b5cf6/ffffff?text=Superstar" class="card-img-top" alt="Superstar">
+                            <div class="card-body p-4">
+                                <span class="badge bg-warning text-dark mb-2">ADIDAS</span>
+                                <h5 class="card-title fw-bold mb-2">Superstar</h5>
+                                <p class="card-text text-muted small mb-3">50年以上愛され続ける名作。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">Low</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">B</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">B</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-warning w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4">
-                        <div class="pet-card">
-                            <img src="https://placehold.co/300x200/06b6d4/ffffff?text=Old+Skool" class="pet-img" alt="Old Skool">
-                            <div class="p-3">
-                                <span class="badge difficulty-badge" style="background: #dcfce7; color: #10b981;">VANS</span>
-                                <h5 class="fw-bold mt-2 mb-2" style="color: var(--brown-color);">Old Skool</h5>
-                                <p class="text-muted small mb-3">サイドストライプが特徴の定番。</p>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="https://placehold.co/300x200/06b6d4/ffffff?text=Old+Skool" class="card-img-top" alt="Old Skool">
+                            <div class="card-body p-4">
+                                <span class="badge bg-primary mb-2">VANS</span>
+                                <h5 class="card-title fw-bold mb-2">Old Skool</h5>
+                                <p class="card-text text-muted small mb-3">サイドストライプが特徴の定番。</p>
                                 <div class="d-flex justify-content-between align-items-center mb-3">
                                     <div>
-                                        <small class="text-muted d-block">カット</small>
-                                        <strong style="color: var(--primary-color);">Low</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">カット</small>
+                                        <strong class="text-primary">Low</strong>
                                     </div>
                                     <div>
-                                        <small class="text-muted d-block">人気度</small>
-                                        <strong style="color: var(--secondary-color);">A</strong>
+                                        <small class="text-muted d-block" style="font-size: 0.7rem;">人気度</small>
+                                        <strong class="text-warning">A</strong>
                                     </div>
                                 </div>
-                                <button class="btn btn-outline-success w-100 rounded-pill" onclick="location.href='sneaker-detail.html'">
+                                <button class="btn btn-outline-primary w-100 rounded-pill stretched-link" onclick="location.href='sneaker-detail.html'">
                                     詳細を見る <i class="bi bi-arrow-right"></i>
                                 </button>
                             </div>
@@ -318,7 +319,7 @@
                 </div>
 
                 <!-- ページネーション -->
-                <nav aria-label="ページネーション" class="mt-5">
+                <nav aria-label="pagination" class="mt-5">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
                             <a class="page-link rounded-pill" href="#"><i class="bi bi-chevron-left"></i></a>
