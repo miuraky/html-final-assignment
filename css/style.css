@@ -229,3 +229,16 @@ footer {
 
 /* Utilities */
 .text-brown { color: var(--brown-color); }
+
+/* Image Uniformity */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Carousel Image Override */
+#sneakerCarousel .card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
